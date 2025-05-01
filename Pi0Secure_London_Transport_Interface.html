@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pi0Secure London Transport Interface</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .secure-container { 
+            padding: 20px;
+            border: 2px solid #000;
+        }
+        .transport-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .metric-box {
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+        .underground-map {
+            width: 100%;
+            height: 500px;
+            border: 1px solid #333;
+        }
+        .real-time-data {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="secure-container">
+        <h1>Pi0Secure London Transport Interface</h1>
+        <div class="underground-map" id="london-underground-map"></div>
+        <div class="transport-grid">
+            <div class="metric-box">
+                <h2>System Status</h2>
+                <div id="system-status"></div>
+            </div>
+            <div class="metric-box">
+                <h2>Train Positions</h2>
+                <div id="train-positions"></div>
+            </div>
+            <div class="metric-box">
+                <h2>Passenger Flow</h2>
+                <div id="passenger-flow"></div>
+            </div>
+            <div class="metric-box">
+                <h2>Network Health</h2>
+                <div id="network-health"></div>
+            </div>
+            <div class="metric-box">
+                <h2>Security Status</h2>
+                <div id="security-status"></div>
+            </div>
+            <div class="metric-box">
+                <h2>4Sight Forecast</h2>
+                <div id="forecast-data"></div>
+            </div>
+        </div>
+        <div class="real-time-data">
+            <h2>Real-Time Analytics</h2>
+            <div id="real-time-analytics"></div>
+        </div>
+    </div>
+</body>
+</html>

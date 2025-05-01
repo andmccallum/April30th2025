@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pi0Secure London Transport Interface</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .secure-container { 
+            padding: 20px;
+            border: 2px solid #000;
+        }
+        .real-time-data {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .metric-box {
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="secure-container">
+        <h1>Pi0Secure London Transport Interface</h1>
+        <div class="real-time-data">
+            <div class="metric-box">
+                <h2>Underground Status</h2>
+                <div id="underground-status"></div>
+            </div>
+            <div class="metric-box">
+                <h2>Train Positions</h2>
+                <div id="train-positions"></div>
+            </div>
+            <div class="metric-box">
+                <h2>Passenger Flow</h2>
+                <div id="passenger-flow"></div>
+            </div>
+            <div class="metric-box">
+                <h2>System Health</h2>
+                <div id="system-health"></div>
+            </div>
+            <div class="metric-box">
+                <h2>Environmental Data</h2>
+                <div id="environmental-data"></div>
+            </div>
+            <div class="metric-box">
+                <h2>Energy Usage</h2>
+                <div id="energy-usage"></div>
+            </div>
+            <div class="metric-box">
+                <h2>Maintenance Logs</h2>
+                <div id="maintenance-logs"></div>
+            </div>
+            <div class="metric-box">
+                <h2>Security Feeds</h2>
+                <div id="security-feeds"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

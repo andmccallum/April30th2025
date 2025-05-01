@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pi0Architect Mint/Mine Interface</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .secure-container { 
+            padding: 20px;
+            border: 2px solid #000;
+        }
+        .mining-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .metric-box {
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+        .energy-display {
+            width: 100%;
+            height: 300px;
+            border: 1px solid #333;
+        }
+        .real-time-data {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="secure-container">
+        <h1>Pi0Architect Mint/Mine Interface</h1>
+        <div class="energy-display" id="energy-visualization"></div>
+        <div class="mining-grid">
+            <div class="metric-box">
+                <h2>Mining Status</h2>
+                <div id="mining-status"></div>
+            </div>
+            <div class="metric-box">
+                <h2>Energy Conversion</h2>
+                <div id="energy-conversion"></div>
+            </div>
+            <div class="metric-box">
+                <h2>Token Generation</h2>
+                <div id="token-generation"></div>
+            </div>
+            <div class="metric-box">
+                <h2>Network Health</h2>
+                <div id="network-health"></div>
+            </div>
+            <div class="metric-box">
+                <h2>Security Status</h2>
+                <div id="security-status"></div>
+            </div>
+            <div class="metric-box">
+                <h2>4Sight Forecast</h2>
+                <div id="forecast-data"></div>
+            </div>
+        </div>
+        <div class="real-time-data">
+            <h2>Real-Time Analytics</h2>
+            <div id="real-time-analytics"></div>
+        </div>
+    </div>
+</body>
+</html>
